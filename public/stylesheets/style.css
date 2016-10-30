@@ -1,0 +1,79 @@
+/* app css stylesheet */
+/*a {
+	text-decoration: none;
+}*/
+.bod-bg {
+	background-color: #d3d3d3;
+	overflow-x: hidden; 
+}
+ .img-div{
+	position:relative; 
+	top:0%; 
+	left:0%; 
+	width:50%; 
+	height:100%; 
+	opacity:0.2;
+	margin-left: 2%;
+ }
+.menu {
+  list-style: none;
+  background-color: black;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 1.0em;
+  margin-top: 1.5em;
+  padding: 1.0em 0 1.0em;
+}
+
+.menu:before {
+  content: "";
+}
+
+.menu:after {
+  content: "";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "";
+  padding-right: 1.0em;
+  padding-left: 2.0em;
+}
+
+.menu-items {
+	text-decoration: none;
+	font-family: "Arial"; 
+	font-size: 18px;
+	color: white;
+}
+
+.menu-items:hover {
+	color: #FFD700;
+}
+
+.album-cover {
+	cursor:pointer;
+	height:150px;
+	width:150px;
+	padding-right: 2em;
+	padding-top: 2em;
+}
+
+.slick-container {
+  width: 660px;
+  /* border: 1px solid white; */
+  margin: auto;
+  padding: 15px;
+}
+
+.slick-image {
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.slick-item img {
+  margin: auto;
+}

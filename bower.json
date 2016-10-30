@@ -1,0 +1,25 @@
+{
+  "name": "volume-four-node",
+  "description": "Volume IV website as a Node/Express project",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0",
+    "angular-bootstrap": "~1.3.x",
+    "videogular": "*",
+    "videogular-themes-default": "*",
+    "videogular-controls": "*",
+    "videogular-buffering": "*",
+    "videogular-overlay-play": "*",
+    "videogular-poster": "*",
+    "angular-slick": "*"
+  },
+  "resolutions": {
+    "angular": ">=1.4.0"
+  }
+}
