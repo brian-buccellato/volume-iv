@@ -17,7 +17,8 @@
     "videogular-buffering": "*",
     "videogular-overlay-play": "*",
     "videogular-poster": "*",
-    "angular-slick": "*"
+    "angular-slick": "*",
+    "bootstrap": "*"
   },
   "resolutions": {
     "angular": ">=1.4.0"
