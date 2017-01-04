@@ -19,19 +19,25 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <script src="libs/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body class="bod-bg">
-	  <ul class="menu">
-		<img ng-src="/javascripts/images/volFourLogo.png" style="height:74px; width:146px; padding-left:1.0em; padding-right:1.0em"></img>
-		<li><a href="#!/about" class="menu-items">ABOUT</a></li>
-		<li><a href="#!/gear" class="menu-items">GEAR</a></li>
-		<li><a href="#!/photos" class="menu-items">PHOTOS</a></li>
-		<li><a href="#!/clients" class="menu-items">CLIENTS</a></li>
-		<li><a href="#!/booking" class="menu-items">BOOKING</a></li>
-		<li><a href="https://www.facebook.com/Volume-IV-424771364285558/" target="_blank"><img ng-src="/javascripts/images/facebook.png" style="height:38px; width:38px; float:right; padding-right: 2em; padding-top: 2em"></a></img>
-	  </ul>
-	
+<body class="container-fluid bod-bg">
+	  <div class="row" style="background-color: black; padding:2em; margin: 1em">
+		  <div class="col-md-2"><img ng-src="/javascripts/images/volFourLogo.png" style="height:74px; width:146px;"></img></div>
+		  <div class="col-md-6">
+			  <ul class="menu">
+				<li><a href="#!/about" class="menu-items">ABOUT</a></li>
+				<li><a href="#!/gear" class="menu-items">GEAR</a></li>
+				<li><a href="#!/photos" class="menu-items">PHOTOS</a></li>
+				<li><a href="#!/clients" class="menu-items">CLIENTS</a></li>
+				<li><a href="#!/booking" class="menu-items">BOOKING</a></li>
+			  </ul>
+		  </div>
+		  <div class="col-md-3"></div>
+		  <div class="col-md-1"><a href="https://www.facebook.com/Volume-IV-424771364285558/" target="_blank"><img ng-src="/javascripts/images/facebook.png" style="height: 40px; width: 40px;"></a></img></div>
+	  </div>
+	  
+	  
 	  <div ng-view ></div>
-
+	    
 	  <!-- In production use:
 	  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 	  -->

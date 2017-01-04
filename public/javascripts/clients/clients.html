@@ -1,34 +1,30 @@
 <div ng-app="'volumeFour.clients'">
-<div ng-controller="clientsCtrl as ctrl" class="container" style="width:100%; height:100px;">
-   <div class="img-div"><img ng-src="/javascripts/images/console.jpg"/></div>
-   <div style="position:relative; top:0px; left:0px; width:100%; height:100px;">
-		<div class="row" style="padding-left:5em;">
-			
-			<p style="color:black; font-size:18px; opacity:0.8;">Some of our favorite projects over the years</p>
-			
+	<div ng-controller="clientsCtrl as ctrl" class="container-fluid">
+		<p class="content-text">Some of our favorite projects over the years</p>
+		<div class="row">
+			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<img ng-repeat="song in songs" class="album-cover" ng-src="{{song.url}}" ng-click="setAudio(song.index)">{{song.artist}}</img>
+				<img ng-repeat="song in songs" class="album-cover"
+					ng-src="{{song.url}}" ng-click="setAudio(song.index)">{{song.artist}}</img>
 			</div>
-		
-			<p style="color:black; font-weight:bold; font-size:18px; opacity:0.8">{{artist}} | {{title}}</p>
-			<videogular style="height:50px; opacity:0.8"vg-player-ready="ctrl.onPlayerReady($API)"   vg-theme="ctrl.config.theme.url" class="videogular-container audio">
-			<vg-media vg-src="ctrl.config.sources" 
-							   vg-tracks="ctrl.config.tracks"
-							   vg-type="audio">
-			</vg-media>
-			<vg-controls>
-				<vg-play-pause-button></vg-play-pause-button>
-				<vg-time-display>{{ currentTime | date:'mm:ss':'+0000' }}</vg-time-display>
-				<vg-scrub-bar>
-					<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-				</vg-scrub-bar>
-				<vg-time-display>{{ timeLeft | date:'mm:ss':'+0000' }}</vg-time-display>
-				<vg-volume>
-					<vg-mute-button></vg-mute-button>
-				</vg-volume>
-			</vg-controls>
-			</videogular>
+			<div class="col-md-2"></div>
 		</div>
-   </div>
-</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<videogular style="height:50px; opacity:0.8; margin-top: 1em;"
+					vg-player-ready="ctrl.onPlayerReady($API)"
+					vg-theme="ctrl.config.theme.url" class="videogular-container audio">
+				<vg-media vg-src="ctrl.config.sources"
+					vg-tracks="ctrl.config.tracks" vg-type="audio"> </vg-media> <vg-controls>
+				<vg-play-pause-button></vg-play-pause-button> <vg-time-display>{{
+				currentTime | date:'mm:ss':'+0000' }}</vg-time-display> <vg-scrub-bar>
+				<vg-scrub-bar-current-time></vg-scrub-bar-current-time> </vg-scrub-bar> <vg-time-display>{{
+				timeLeft | date:'mm:ss':'+0000' }}</vg-time-display> <vg-volume> <vg-mute-button></vg-mute-button>
+				</vg-volume> </vg-controls> </videogular>
+				<p class="content-text" style="margin-top: 1em">{{artist}} | {{title}}</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
 </div>

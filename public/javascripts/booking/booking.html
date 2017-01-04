@@ -1,36 +1,59 @@
-<div style="width:100%; height:100px;">
-   <div  class="img-div"><img ng-src="/javascripts/images/console.jpg"/></div>
-   <div style="position:relative; top:0px; left:0px; width:100%; height:100px;">
-		<div class="container-fluid">
-			<div class="row" style="padding-left:5em;">
-				<div class="col-md-6" style="border-right:thin solid #eeeeee">
-					<p>
-						We like hearing from you because we don't have a lot of friends.  
-						Please be our friend.  And give us your money as well.
-					</p>
-					<div class="row">
-						<div class=col-md-3>First Name:</div> 
-						<input class=col-md-5 type="text" ng-model="emailParts.firstName">
-					</div>
-					<div class="row">
-						<div class=col-md-3>Last Name</div> 
-						<input class=col-md-5 type="text" ng-model="emailParts.lastName">
-					</div>
-					<div class=row>
-						<div class=col-md-3>email:</div> 
-						<input class=col-md-5 type="text" ng-model="emailParts.email">
-					</div>
-				</div>
-				<div class=col-md-6>
-					<div class=row>
-						<div class=col-md-3>Message:</div> 
-						<textarea rows="6" class=col-md-6 type="text" ng-model="emailParts.msg"></textarea>
-					</div>
-					<div class=row>
-						<input class=col-md-5 type="button" style="margin-top:1em;" ng-click=sendContactEmail(emailParts) value="Send">
-					</div>
-				</div>
+<div class="container-fluid">
+	<p class="content-text">Spicy jalapeno bacon ipsum dolor amet
+		hamburger meatball pork belly tail spare ribs boudin ullamco, jerky
+		shoulder leberkas non. Pork laborum irure, pig sed esse adipisicing
+		ribeye cillum strip steak lorem. Kielbasa aliqua brisket shoulder,
+		ball tip sed meatloaf andouille est kevin nulla irure nisi. Sint irure
+		eu filet mignon leberkas in short loin pastrami. Do venison drumstick
+		exercitation minim beef bresaola nulla corned beef burgdoggen
+		cupidatat pariatur aliqua kevin hamburger. Chicken cillum et, dolore
+		pancetta kevin ea esse cow deserunt eu. Duis cow shoulder frankfurter
+		minim tail pork chop occaecat dolore ut ullamco ham prosciutto aute.
+		Cupim tempor pig aute beef ribs chicken swine mollit, esse ea
+		frankfurter capicola elit ut. Shank sed burgdoggen pork chop, biltong
+		aliquip filet mignon exercitation duis cow incididunt ipsum laboris.
+		Incididunt kevin pork belly commodo leberkas chicken ad.</p>
+	<p class="content-text">Spicy jalapeno bacon ipsum dolor amet
+		hamburger meatball pork belly tail spare ribs boudin ullamco, jerky
+		shoulder leberkas non. Pork laborum irure, pig sed esse adipisicing
+		ribeye cillum strip steak lorem. Kielbasa aliqua brisket shoulder,
+		ball tip sed meatloaf andouille est kevin nulla irure nisi. Sint irure
+		eu filet mignon leberkas in short loin pastrami. Do venison drumstick
+		exercitation minim beef bresaola nulla corned beef burgdoggen
+		cupidatat pariatur aliqua kevin hamburger. Chicken cillum et, dolore
+		pancetta kevin ea esse cow deserunt eu. Duis cow shoulder frankfurter
+		minim tail pork chop occaecat dolore ut ullamco ham prosciutto aute.
+		Cupim tempor pig aute beef ribs chicken swine mollit, esse ea
+		frankfurter capicola elit ut. Shank sed burgdoggen pork chop, biltong
+		aliquip filet mignon exercitation duis cow incididunt ipsum laboris.
+		Incididunt kevin pork belly commodo leberkas chicken ad.</p>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="row">
+				<!-- <div class=col-md-3>First Name:</div> -->
+				<input class=col-md-12 type="text" ng-model="emailParts.firstName" placeholder="first name">
+			</div>
+			<div class="row">
+				<input class=col-md-12 type="text" ng-model="emailParts.lastName" placeholder="last name">
+			</div>
+			<div class=row>
+				<input class=col-md-12 type="text" ng-model="emailParts.email" placeholder="email">
 			</div>
 		</div>
-   </div>
+		<div class="col-md-1" style="border-center: thin solid black"></div>
+		<div class=col-md-8>
+			<div class=row>
+				<textarea rows="6" class=col-md-8 type="text"
+					ng-model="emailParts.msg" placeholder="message"></textarea>
+			</div>
+			
+		</div>
+		<div class="col-md-1"></div>
+		<div class=row>
+				<input class="col-md-1  btn btn-primary submit-btn pull-left" type="button" 
+					ng-click=sendContactEmail(emailParts) value="Send">
+			</div>
+	</div>
 </div>
+
