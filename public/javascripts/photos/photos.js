@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick'])
+angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick', 'PathService'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/photos', {
@@ -8,28 +8,19 @@ angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick'])
   });
 }])
 
-.controller('photosCtrl', ['$scope', '$uibModal', function($scope, $uibModal) {
+.controller('photosCtrl', ['$scope', 'ImageService', function($scope, ImageService) {
 	
-	$scope.gearSlides = [
-		{
-			image: "/javascripts/photos/gear/393.jpg"
-		},
-		{
-			image: "/javascripts/photos/gear/413.jpg"
-		},
-		{
-			image: "/javascripts/photos/gear/417.jpg"
-		},
-		{
-			image: "/javascripts/photos/gear/424.jpg"
-		},
-		{
-			image: "/javascripts/photos/gear/425.jpg"
-		},
-		{
-			image: "/javascripts/photos/gear/428.jpg"
-		},
-	];
-	
+	$scope.gearSlides = ImageService.getGearPaths().map(function(index){
+		return {image: "/javascripts/photos/gear/" + index + ".jpg"}
+	});
+	$scope.liveSlides = ImageService.getLiveRoomPaths().map(function(index){
+		return {image: "/javascripts/photos/live-room/" + index + ".jpg"}
+	});
+	$scope.controlSlides = ImageService.getControlRoomPaths().map(function(index){
+		return {image: "/javascripts/photos/control-room/" + index + ".jpg"}
+	}) 
 }])
+
+
+
 

@@ -1,16 +1,45 @@
 <div ng-controller="photosCtrl" class="container-fluid">
-  <p class="content-text">Check Out all of these really cool photos</p>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <div class="slick-container">
-	    <slick infinite=true slides-to-show=3 slides-to-scroll=3 centerMode=true dots=true>
-	      <div class="slick-item" ng-repeat="image in gearSlides">
-		    <img class="slick-image" ng-src="{{ image.image }}" ng-click="openFocus(image.image)"/>
-		  </div>
-        </slick>
-	  </div>
-    </div>
-    <div class="col-md-2"></div>
-  </div>
+	<p class="content-text">GEAR</p>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="slick-container">
+				<slick infinite=true slides-to-show=5 slides-to-scroll=3
+					centerMode=true dots=false>
+				<div class="slick-item" ng-repeat="image in gearSlides">
+					<img class="slick-image" ng-src="{{ image.image }}"
+						ng-click="openFocus(image.image)" />
+				</div>
+				</slick>
+			</div>
+		</div>
+	</div>
+	<p class="content-text">LIVE ROOM</p>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="slick-container">
+				<slick infinite=true slides-to-show=5 slides-to-scroll=3
+					centerMode=true dots=false>
+				<div class="slick-item" ng-repeat="image in liveSlides">
+					<img class="slick-image" ng-src="{{ image.image }}"
+						ng-click="openFocus(image.image)" />
+				</div>
+				</slick>
+			</div>
+		</div>
+	</div>
+	<p class="content-text">CONTROL ROOM</p>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="slick-container">
+				<slick infinite=true slides-to-show=5 slides-to-scroll=3
+					centerMode=true dots=false>
+				<div class="slick-item" ng-repeat="image in controlSlides">
+					<img class="slick-image" ng-src="{{ image.image }}"
+						ng-click="openFocus(image.image)" />
+				</div>
+				</slick>
+			</div>
+		</div>
+	</div>
+</div>
 </div>

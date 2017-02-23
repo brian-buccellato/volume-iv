@@ -65,16 +65,16 @@
 }
 
 .slick-container {
-  width: 660px;
+  width: 100%;
   /* border: 1px solid white; */
   margin: auto;
   padding: 15px;
 }
 
 .slick-image {
-	width: 200px;
-	height: 200px;
-	cursor: pointer;
+	width: 260px;
+	height: 260px;
+	
 }
 
 .slick-item img {

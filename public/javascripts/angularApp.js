@@ -7,9 +7,9 @@ angular.module('volumeFour', [
   'volumeFour.photos',
   'volumeFour.clients',
   'volumeFour.booking'
-]).
+])
 
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   
   $locationProvider.hashPrefix('!');
 

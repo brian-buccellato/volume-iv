@@ -2,16 +2,16 @@
 	<div ng-controller="clientsCtrl as ctrl" class="container-fluid">
 		<p class="content-text">Some of our favorite projects over the years</p>
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8">
 				<img ng-repeat="song in songs" class="album-cover"
 					ng-src="{{song.url}}" ng-click="setAudio(song.index)">{{song.artist}}</img>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-xs-2"></div>
 		</div>
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8">
 				<videogular style="height:50px; opacity:0.8; margin-top: 1em;"
 					vg-player-ready="ctrl.onPlayerReady($API)"
 					vg-theme="ctrl.config.theme.url" class="videogular-container audio">
@@ -24,7 +24,7 @@
 				</vg-volume> </vg-controls> </videogular>
 				<p class="content-text" style="margin-top: 1em">{{artist}} | {{title}}</p>
 			</div>
-			<div class="col-md-2"></div>
+			<div class="col-xs-2"></div>
 		</div>
 	</div>
 </div>
