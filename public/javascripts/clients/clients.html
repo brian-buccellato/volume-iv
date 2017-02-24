@@ -10,9 +10,9 @@
 			<div class="col-xs-2"></div>
 		</div>
 		<div class="row">
-			<div class="col-xs-2"></div>
-			<div class="col-xs-8">
-				<videogular style="height:50px; opacity:0.8; margin-top: 1em;"
+			<div ng-if="showCols" class="col-xs-2"></div>
+			<div class="{{ playerWidth }}">
+				<videogular class="audio-player"
 					vg-player-ready="ctrl.onPlayerReady($API)"
 					vg-theme="ctrl.config.theme.url" class="videogular-container audio">
 				<vg-media vg-src="ctrl.config.sources"
@@ -24,7 +24,7 @@
 				</vg-volume> </vg-controls> </videogular>
 				<p class="content-text" style="margin-top: 1em">{{artist}} | {{title}}</p>
 			</div>
-			<div class="col-xs-2"></div>
+			<div ng-if="showCols" class="col-xs-2"></div>
 		</div>
 	</div>
 </div>

@@ -19,7 +19,8 @@ angular.module('volumeFour.clients', ['ngRoute',
 	
 	var me = this;
 	me.API = null;
-	
+	$scope.showCols = window.innerWidth > 480 ? true : false;
+	$scope.playerWidth = $scope.showCols ? "col-xs-8" : "col-xs-12";
 	$scope.setAudio = function(index){
 		me.API.stop();
 		me.config.sources = me.tracks[index].sources;

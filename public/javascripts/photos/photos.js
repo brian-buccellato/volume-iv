@@ -8,7 +8,7 @@ angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick', 'PathSe
   });
 }])
 
-.controller('photosCtrl', ['$scope', 'ImageService', function($scope, ImageService) {
+.controller('photosCtrl', ['$scope', 'ImageService', '$window', function($scope, ImageService, $window) {
 	
 	$scope.gearSlides = ImageService.getGearPaths().map(function(index){
 		return {image: "/javascripts/photos/gear/" + index + ".jpg"}
@@ -18,7 +18,7 @@ angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick', 'PathSe
 	});
 	$scope.controlSlides = ImageService.getControlRoomPaths().map(function(index){
 		return {image: "/javascripts/photos/control-room/" + index + ".jpg"}
-	}) 
+	});
 }])
 
 

@@ -1,0 +1,91 @@
+/* app css stylesheet */
+/*a {
+	text-decoration: none;
+}*/
+html, body {
+	height: 100%;
+}
+
+.header-row {
+	background-color: black;
+	padding: 0.2em;
+	margin: 0.2em;
+}
+
+.vol-four-logo {
+	height: 35px;
+	width: 70px;
+}
+
+.facebook-logo {
+	height: 12px;
+	width: 12px;
+	float: right;
+}
+
+.bod-bg {
+	background-color: #d3d3d3;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	background-image: url("/javascripts/images/consoletest.jpg");
+	background-size: cover;
+}
+
+.menu-items {
+	text-decoration: none;
+	font-family: "Arial";
+	font-size: 7.5px;
+	color: white;
+}
+
+.menu-items:hover {
+	color: #FFD700;
+}
+
+.album-cover {
+	cursor: pointer;
+	height: 80px;
+	width: 80px;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+
+.audio-player {
+	height:50px; 
+	width: 100%;
+	opacity:0.8; 
+	margin-top: 1em
+}
+
+.slick-container {
+	width: 80%;
+	margin: auto;
+	padding: 15px;
+}
+
+.slick-image {
+	width: 175px;
+	height: 175px;
+}
+
+.slick-item img {
+	margin: auto;
+}
+
+.content-text {
+	padding-left: 4%;
+	padding-right: 4%;
+	color: black;
+	font-weight: bold;
+	font-size: 10px;
+	opacity: 0.8;
+}
+
+.submit-btn {
+	background-color: black;
+	margin-top: 1em;
+}
+
+.submit-btn:hover {
+	background-color: grey;
+}

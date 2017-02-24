@@ -17,25 +17,30 @@
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="stylesheets/small-device.css" />
   <script src="libs/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body class="container-fluid bod-bg">
-	  <div class="row" style="background-color: black; padding:2em; margin: 1em">
-		  <div class="col-xs-2"><img ng-src="/javascripts/images/volFourLogo.png" style="height:74px; width:146px;"></img></div>
-		  <div class="col-xs-6">
-			  <ul class="menu">
-				<li><a href="#!/about" class="menu-items">ABOUT</a></li>
-				<li><a href="#!/gear" class="menu-items">GEAR</a></li>
-				<li><a href="#!/photos" class="menu-items">PHOTOS</a></li>
-				<li><a href="#!/clients" class="menu-items">CLIENTS</a></li>
-				<li><a href="#!/booking" class="menu-items">BOOKING</a></li>
-			  </ul>
-		  </div>
-		  <div class="col-xs-3"></div>
-		  <div class="col-xs-1"><a href="https://www.facebook.com/Volume-IV-424771364285558/" target="_blank"><img ng-src="/javascripts/images/facebook.png" style="height: 40px; width: 40px;"></a></img></div>
+	  <div class="row header-row">
+		  <div class="col-xs-2"><img ng-src="/javascripts/images/volFourLogo.png" class="vol-four-logo"></img></div>
+		  <div class="col-xs-8"></div>
+		  <div class="col-xs-2">
+		  	
+		  </div> 
 	  </div>
-	  
-	  
+	  <div class="row header-row">
+	  	<div class="col-xs-2"><a href="#!/about" class="menu-items">ABOUT</a></div>
+	  	<div class="col-xs-2"><a href="#!/gear" class="menu-items">GEAR</a></div>
+	  	<div class="col-xs-2"><a href="#!/photos" class="menu-items">PHOTOS</a></div>
+	  	<div class="col-xs-2"><a href="#!/clients" class="menu-items">CLIENTS</a></div>
+	  	<div class="col-xs-2"><a href="#!/booking" class="menu-items">BOOKING</a></div>
+	  	<div class="col-xs-2">
+	  		<a href="https://www.facebook.com/Volume-IV-424771364285558/" target="_blank">
+		  		<img ng-src="/javascripts/images/facebook.png" class="facebook-logo">
+		  	</a>
+		 </div>
+	  </div>
 	  <div ng-view ></div>
 	    
 	  <!-- In production use:
@@ -63,6 +68,7 @@
 	  <script src="/javascripts/components/version/version.js"></script>
 	  <script src="/javascripts/components/version/version-directive.js"></script>
 	  <script src="/javascripts/components/version/interpolate-filter.js"></script>
- 
+	  
+	  
 </body>
 </html>

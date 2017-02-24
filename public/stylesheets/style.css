@@ -1,53 +1,35 @@
-/* app css stylesheet */
-/*a {
-	text-decoration: none;
-}*/
+html, body {
+	height: 100%;
+}
+
+.header-row {
+	background-color: black;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+.vol-four-logo {
+	height: auto;
+	width: 80%;
+}
+
+.facebook-logo {
+	height: auto;
+	width: 15%;
+	float: right;
+}
+
 .bod-bg {
 	background-color: #d3d3d3;
 	margin-left: 50px;
 	margin-right: 50px;
 	background-image: url("/javascripts/images/consoletest.jpg");
-	background-repeat: no-repeat;
-	background-size: 2000px 780px;
-}
-.img-div{
-	position: relative; 
-	top:0%; 
-	left:0%; 
-	width:100%; 
-	height:100%;   
-	/* opacity:0.2; */
- }
-.menu {
-  list-style: none;
-  background-color: black; 
-  border-bottom: 0.1em solid black;
-  margin-bottom: 1.0em;
-  margin-top: 1.5em;
-  /* padding: 1.0em 0 1.0em; */
-}
-
-.menu:before {
-  content: "";
-}
-
-.menu:after {
-  content: "";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "";
-  padding-right: 1.0em;
-  padding-left: 2.0em; 
+	background-size: cover;
 }
 
 .menu-items {
 	text-decoration: none;
-	font-family: "Arial"; 
+	font-family: "Arial";
 	font-size: 18px;
 	color: white;
 }
@@ -57,40 +39,43 @@
 }
 
 .album-cover {
-	cursor:pointer;
-	height:150px;
-	width:150px;
+	cursor: pointer;
+	height: 150px;
+	width: 150px;
 	padding-right: 2em;
 	padding-top: 2em;
 }
-
+.audio-player {
+	height:50px; 
+	opacity:0.8; 
+	margin-top: 1em
+}
 .slick-container {
-  width: 100%;
-  /* border: 1px solid white; */
-  margin: auto;
-  padding: 15px;
+	width: 100%;
+	margin: auto;
+	padding: 15px;
 }
 
 .slick-image {
 	width: 260px;
 	height: 260px;
-	
 }
 
 .slick-item img {
-  margin: auto;
+	margin: auto;
 }
 
 .content-text {
 	padding-left: 4%;
 	padding-right: 4%;
-	color: black; 
-	font-weight:bold; 
-	font-size: 18px; 
-	opacity:0.8;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	opacity: 0.8;
 }
+
 .submit-btn {
-	background-color: #004b00;
+	background-color: black;
 	margin-top: 1em;
 }
 
