@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick', 'PathService'])
+angular.module('volumeFour.photos', ['ngRoute', 'ui.bootstrap', 'slick', 'VolFourService'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/photos', {

@@ -1,44 +1,41 @@
 <div class="container-fluid">
-	<p class="content-text">Spicy jalapeno bacon ipsum dolor amet
-		hamburger meatball pork belly tail spare ribs boudin ullamco, jerky
-		shoulder leberkas non. Pork laborum irure, pig sed esse adipisicing
-		ribeye cillum strip steak lorem. Kielbasa aliqua brisket shoulder,
-		ball tip sed meatloaf andouille est kevin nulla irure nisi. Sint irure
-		eu filet mignon leberkas in short loin pastrami. Do venison drumstick
-		exercitation minim beef bresaola nulla corned beef burgdoggen
-		cupidatat pariatur aliqua kevin hamburger. Chicken cillum et, dolore
-		pancetta kevin ea esse cow deserunt eu. Duis cow shoulder frankfurter
-		minim tail pork chop occaecat dolore ut ullamco ham prosciutto aute.
-		Cupim tempor pig aute beef ribs chicken swine mollit, esse ea
-		frankfurter capicola elit ut. Shank sed burgdoggen pork chop, biltong
-		aliquip filet mignon exercitation duis cow incididunt ipsum laboris.
-		Incididunt kevin pork belly commodo leberkas chicken ad.</p>
-	<p class="content-text">Spicy jalapeno bacon ipsum dolor amet
-		hamburger meatball pork belly tail spare ribs boudin ullamco, jerky
-		shoulder leberkas non. Pork laborum irure, pig sed esse adipisicing
-		ribeye cillum strip steak lorem. Kielbasa aliqua brisket shoulder,
-		ball tip sed meatloaf andouille est kevin nulla irure nisi. Sint irure
-		eu filet mignon leberkas in short loin pastrami. Do venison drumstick
-		exercitation minim beef bresaola nulla corned beef burgdoggen
-		cupidatat pariatur aliqua kevin hamburger. Chicken cillum et, dolore
-		pancetta kevin ea esse cow deserunt eu. Duis cow shoulder frankfurter
-		minim tail pork chop occaecat dolore ut ullamco ham prosciutto aute.
-		Cupim tempor pig aute beef ribs chicken swine mollit, esse ea
-		frankfurter capicola elit ut. Shank sed burgdoggen pork chop, biltong
-		aliquip filet mignon exercitation duis cow incididunt ipsum laboris.
-		Incididunt kevin pork belly commodo leberkas chicken ad.</p>
+	<div class="row" style="margin: 1.0em"></div>
+	<p class="content-text">
+		Volume IV was designed with the independent musician in mind, but we welcome all types.<br><br>
+		If you are an artist and are interested in recording, we would love to hear from you!  We 
+		know that making a great record takes time and money and we are designed with this in mind.
+		We try to be as flexible as possible in our pricing and can offer more than a few solutions to
+		shave cost from your project.<br><br>
+		Home recordists! Use our tracking rooms and sweet selection of gear to lay down your basics and
+		then finish it off yourself.  Or, let us help you mix your tracks with some real anolog flair.<br><br>
+		Freelancers! If you're looking for an affordable place to work without breaking your clients' budget,
+		get in touch.  Rates start as low as $150 a day!<br><br>
+		Use the form below to say "hello" or feel free to contact us directly.<br><br>
+		Chris: (732) 236-1119<br>Brian: (732) 299-9965    
+	</p>
+	
 	<div class="row" style="margin-bottom: 3em;"></div>
-	<div class="row">
+	
+	<div class="row" uib-collapse="showEmailResult" style="transition: 0.4s">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10 email-confirm">
+			<button ng-click="submitComplete()"><span class="glyphicon glyphicon-remove"></span></button>
+			<p class="content-text" style="color:white; text-align:center">{{message}}</p>
+		</div>
+		<div class="col-xs-1"></div>
+	</div>
+	
+	<div ng-if="!smallScreen" class="row">
 		<div class="col-xs-1"></div>
 		<div class="col-xs-2">
 			<div class="row">
-				<input class=col-xs-12 type="text" ng-model="emailParts.firstName" placeholder="first name" style="margin-bottom:0.5em;">
+				<input class=col-xs-12 type="text" ng-model="emailParts.firstName" placeholder="first name" style="margin-bottom: 0.5em;">
 			</div>
 			<div class="row">
-				<input class=col-xs-12 type="text" ng-model="emailParts.lastName" placeholder="last name" style="margin-bottom:0.5em;">
+				<input class=col-xs-12 type="text" ng-model="emailParts.lastName" placeholder="last name" style="margin-bottom: 0.5em;">
 			</div>
 			<div class=row>
-				<input class=col-xs-12 type="text" ng-model="emailParts.email" placeholder="email" style="margin-bottom:0.5em;">
+				<input class=col-xs-12 type="text" ng-model="emailParts.email" placeholder="email" style="margin-bottom: 0.5em;">
 			</div>
 		</div>
 		<div class="col-xs-1"></div>
@@ -53,7 +50,30 @@
 		<div class=row>
 				<input class="col-xs-1  btn btn-primary submit-btn pull-left" type="button" 
 					ng-click=sendContactEmail(emailParts) value="Send">
+		</div>
+	</div>
+	
+	<div ng-if="smallScreen" class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div class="row">
+				<div class="col-xs-12">
+					<input type="text" ng-model="emailParts.firstName" placeholder="first name" style="margin-bottom: 0.5em;">
+					<input type="text" ng-model="emailParts.lastName" placeholder="last name" style="margin-bottom: 0.5em;">
+					<input type="text" ng-model="emailParts.email" placeholder="email" style="margin-bottom: 0.5em;">
+				</div>
 			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<textarea rows="6" cols="30" type="text" ng-model="emailParts.msg" placeholder="message"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12"><input class="btn btn-primary submit-btn pull-left" type="button" 
+			    	ng-click=sendContactEmail(emailParts) value="Send"></div>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
 	</div>
 </div>
 

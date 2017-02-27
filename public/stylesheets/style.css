@@ -8,6 +8,13 @@ html, body {
 	margin: 0.5em;
 }
 
+.email-confirm {
+	background-color: black;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 5px;
+}
+
 .vol-four-logo {
 	height: auto;
 	width: 80%;
@@ -17,6 +24,17 @@ html, body {
 	height: auto;
 	width: 15%;
 	float: right;
+}
+.head-shot {
+	width: 125px;
+	height: 125px;
+	padding-top: 1em;
+}
+
+.head-shot-row {
+	opacity: 0.8;
+	background-color: black;
+	margin: 3.0em;
 }
 
 .bod-bg {
