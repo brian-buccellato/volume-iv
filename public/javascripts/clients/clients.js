@@ -52,6 +52,11 @@ angular.module('volumeFour.clients', ['ngRoute',
 		sources: [
 				{src: $sce.trustAsResourceUrl('/javascripts/sounds/revisionist.mp3'), type: 'audio/mpeg'}
 			],
+		},
+		{
+		sources: [
+			{src: $sce.trustAsResourceUrl('/javascripts/sounds/my-weight-disappearing.wav'), type: 'audio/wav'}
+			],
 		}
 	];
 	
@@ -88,6 +93,12 @@ angular.module('volumeFour.clients', ['ngRoute',
 			artist: "The Measure [SA]",
 			title: "Revisionist",
 			url: "/javascripts/images/measure.jpg"
+		},
+		{
+			index: 4,
+			artist: "Risk Relay",
+			title: "My Weight Disappearing",
+			url: "/javascripts/images/risk-relay.jpg"
 		}
 	];
 	$scope.artist = $scope.songs[0].artist;
